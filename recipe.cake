@@ -5,9 +5,9 @@ Environment.SetVariableNames();
 BuildParameters.SetParameters(context: Context,
                             buildSystem: BuildSystem,
                             sourceDirectoryPath: "./Source",
-                            title: "Cake.DotNet.Module",
+                            title: "Cake.DotNetTool.Module",
                             repositoryOwner: "cake-contrib",
-                            repositoryName: "Cake.DotNet.Module",
+                            repositoryName: "Cake.DotNetTool.Module",
                             appVeyorAccountName: "cakecontrib",
                             shouldRunGitVersion: true);
 
@@ -15,7 +15,7 @@ BuildParameters.PrintParameters(Context);
 
 ToolSettings.SetToolSettings(context: Context,
                             dupFinderExcludePattern: new string[] {
-                                BuildParameters.RootDirectoryPath + "/src/Cake.DotNet.Module.Tests/*.cs", BuildParameters.RootDirectoryPath + "/Source/Cake.DotNet.Module/**/*.AssemblyInfo.cs" },
+                                BuildParameters.RootDirectoryPath + "/src/Cake.DotNetTool.Module.Tests/*.cs", BuildParameters.RootDirectoryPath + "/Source/Cake.DotNetTool.Module/**/*.AssemblyInfo.cs" },
                             testCoverageFilter: "+[*]* -[xunit.*]* -[Cake.Core]* -[Cake.Testing]* -[*.Tests]* ",
                             testCoverageExcludeByAttribute: "*.ExcludeFromCodeCoverage*",
                             testCoverageExcludeByFile: "*/*Designer.cs;*/*.g.cs;*/*.g.i.cs");

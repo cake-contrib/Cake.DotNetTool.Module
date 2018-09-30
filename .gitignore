@@ -280,3 +280,6 @@ BuildArtifacts/
 
 # Testing
 test/tools/Modules/*.dll
+
+.store
+dotnet-octo
