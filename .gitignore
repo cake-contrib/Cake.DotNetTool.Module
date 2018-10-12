@@ -279,7 +279,9 @@ BuildArtifacts/
 .DS_Store
 
 # Testing
-test/tools/Modules/*.dll
+test/tools/Modules/**/*.dll
+test/tools/Modules/**/*.nuspec
+test/tools/Modules/**/*.xml
 
 .store
 dotnet-octo
