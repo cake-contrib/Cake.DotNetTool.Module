@@ -50,6 +50,16 @@ If you need to specify a NuGet config file, for example you need to authenticate
 #tool dotnet:?package=Octopus.DotNet.Cli&version=4.41.0&configfile="../../NuGet.config"
 ```
 
+# Ignore failed sources
+
+There might be cases where you want to ignore failed NuGet sources as long as the package could be restored.
+
+## Example
+
+```
+#tool dotnet:?package=Octopus.DotNet.Cli&version=4.41.0&ignore-failed-sources"
+```
+
 # Framework
 
 Specifies the [target framework](https://docs.microsoft.com/en-us/dotnet/standard/frameworks) to install the tool for. By default, the .NET Core SDK tries to choose the most appropriate target framework.
