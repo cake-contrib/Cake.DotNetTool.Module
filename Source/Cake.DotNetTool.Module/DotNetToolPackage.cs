@@ -5,5 +5,6 @@ namespace Cake.DotNetTool.Module
         public string Id { get; set; }
         public string Version { get; set; }
         public string ShortCode { get; set; }
+        public string Manifest { get; set; }
     }
 }

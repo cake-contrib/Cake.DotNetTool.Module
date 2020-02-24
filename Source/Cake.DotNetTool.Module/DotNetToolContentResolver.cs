@@ -58,9 +58,9 @@ namespace Cake.DotNetTool.Module
 
             if (type == PackageType.Tool)
             {
-                if(package.Parameters.ContainsKey("global"))
+                if (package.Parameters.ContainsKey("global"))
                 {
-                    if(_environment.Platform.IsUnix())
+                    if (_environment.Platform.IsUnix())
                     {
                         return GetToolFiles(new DirectoryPath(_environment.GetEnvironmentVariable("HOME")).Combine(".dotnet/tools"), package);
                     }
@@ -68,6 +68,10 @@ namespace Cake.DotNetTool.Module
                     {
                         return GetToolFiles(new DirectoryPath(_environment.GetEnvironmentVariable("USERPROFILE")).Combine(".dotnet/tools"), package);
                     }
+                }
+                else if (package.Parameters.ContainsKey("local"))
+                {
+                    return new List<IFile>(); //TODO
                 }
                 else
                 {
