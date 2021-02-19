@@ -8,7 +8,8 @@ BuildParameters.SetParameters(context: Context,
                             title: "Cake.DotNetTool.Module",
                             repositoryOwner: "cake-contrib",
                             repositoryName: "Cake.DotNetTool.Module",
-                            appVeyorAccountName: "cakecontrib");
+                            appVeyorAccountName: "cakecontrib",
+                            shouldRunDotNetCorePack: true);
 
 BuildParameters.PrintParameters(Context);
 
