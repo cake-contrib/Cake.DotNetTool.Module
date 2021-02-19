@@ -337,7 +337,6 @@ healthchecksdb
 
 # Cake
 tools/**
-!tools/packages.config
 
 # Build Related
 BuildArtifacts/*
