@@ -23,7 +23,7 @@ create:
     You can download this release from
     [nuget](https://nuget.org/packages/Cake.DotNetTool.Module/{milestone}),
     or you can just reference it in a cake build script
-    with `#addin nuget:?package=Cake.DotNetTool.Module&version={milestone}`.
+    with `#module nuget:?package=Cake.DotNetTool.Module&version={milestone}`.
   footer-includes-milestone: true
   milestone-replace-text: "{milestone}"
   include-sha-section: true
