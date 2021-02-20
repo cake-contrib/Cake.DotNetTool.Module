@@ -10,7 +10,8 @@ BuildParameters.SetParameters(context: Context,
                             repositoryName: "Cake.DotNetTool.Module",
                             appVeyorAccountName: "cakecontrib",
                             shouldRunDotNetCorePack: true,
-                            preferredBuildProviderType: BuildProviderType.GitHubActions);
+                            preferredBuildProviderType: BuildProviderType.GitHubActions,
+                            shouldGenerateDocumentation: false);
 
 BuildParameters.PrintParameters(Context);
 
